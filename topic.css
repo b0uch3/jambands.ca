@@ -1,0 +1,25 @@
+.topic-main { display:block; width:100%; max-width:1000px; margin:0 auto; padding:clamp(55px,8vw,110px) 0 95px; }
+.topic-back { color:#eebc69; text-decoration:none; font-size:.88rem; font-weight:700; }
+.topic-back:hover { text-decoration:underline; }
+.topic-header { margin:62px 0 22px; }
+.topic-kicker { text-transform:uppercase; letter-spacing:.16em; color:#eebc69; font-size:.72rem; font-weight:700; }
+.topic-header h1 { font-size:clamp(2.8rem,7vw,6.4rem); line-height:.98; letter-spacing:-.06em; margin:16px 0 20px; overflow-wrap:anywhere; }
+#topic-meta { color:#eebc69; font-size:.9rem; font-weight:700; }
+.topic-context { color:#b9c8bd; line-height:1.55; max-width:750px; margin:0 0 55px; }
+.topic-posts { min-height:180px; }
+.topic-post { display:grid; grid-template-columns:minmax(150px,200px) minmax(0,1fr); gap:clamp(20px,4vw,55px); padding:28px 0 36px; border-top:1px solid #4b6859; }
+.topic-post-author { color:#eebc69; font-weight:800; overflow-wrap:anywhere; }
+.topic-post-date { display:block; color:#a9bba9; font-size:.78rem; margin-top:7px; }
+.topic-post-body { color:#e1e9df; line-height:1.65; white-space:pre-wrap; overflow-wrap:anywhere; font-size:1rem; }
+.topic-post-body p { margin:0; }
+.topic-pager { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:18px 0; border-top:1px solid #4b6859; color:#b9c8bd; font-size:.84rem; }
+.topic-pager a { color:#eebc69; text-decoration:none; font-weight:700; }
+.topic-pager a:hover { text-decoration:underline; }
+.topic-pager a[aria-disabled="true"] { color:#60756a; pointer-events:none; }
+.topic-pager span { text-align:center; }
+.topic-jump { display:flex; align-items:center; gap:7px; }
+.topic-jump input[type="number"] { width:70px; padding:7px; border:1px solid #60756a; background:#173127; color:#f6f2e8; font:inherit; }
+.topic-jump button { padding:8px 11px; border:1px solid #927c58; background:#244336; color:#eebc69; font:inherit; font-weight:700; cursor:pointer; }
+.topic-jump button:hover { background:#385446; }
+.topic-error { color:#eebc69; padding:25px 0; }
+@media(max-width:650px) { .topic-post { grid-template-columns:1fr; gap:13px; } .topic-post-date { display:inline; margin-left:8px; } .topic-header { margin-top:48px; } .topic-pager { justify-content:center; } }

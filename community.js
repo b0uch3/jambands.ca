@@ -74,7 +74,10 @@ function renderThreads(list, ids, threads, focus) {
     rank.className = 'thread-rank';
     rank.textContent = String(index + 1).padStart(2, '0');
     const title = document.createElement('h4');
-    title.textContent = thread.title;
+    const link = document.createElement('a');
+    link.href = `topic.html?id=${thread.id}`;
+    link.textContent = thread.title;
+    title.append(link);
     heading.append(rank, title);
     const byline = document.createElement('p');
     byline.className = 'thread-byline';
