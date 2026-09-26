@@ -1,0 +1,35 @@
+.community-main { display:block; width:100%; padding:clamp(55px,8vw,120px) 0 90px; }
+.community-intro { max-width:930px; }
+.community-intro h1 { font-size:clamp(4rem,10vw,9.5rem); margin:0 0 28px; line-height:.88; }
+.community-intro h1 em { color:#eebc69; font-style:normal; }
+.community-intro > p:last-child { max-width:660px; color:#d9e2d9; font-size:clamp(1.1rem,1.8vw,1.45rem); line-height:1.55; }
+.stat-strip { display:grid; grid-template-columns:repeat(3,1fr); margin:72px 0 96px; border-top:1px solid #60756a; border-bottom:1px solid #60756a; }
+.stat-strip > div { padding:30px 20px 34px 0; }
+.stat-strip > div + div { padding-left:30px; border-left:1px solid #60756a; }
+.stat-strip strong { display:block; color:#eebc69; font-size:clamp(2rem,4vw,4.2rem); letter-spacing:-.075em; line-height:1; }
+.stat-strip span { display:block; color:#b9c8bd; margin-top:12px; font-size:.9rem; }
+.rankings { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(26px,4vw,65px); }
+.ranking { min-width:0; }
+.ranking-heading { min-height:175px; }
+.ranking-kicker { text-transform:uppercase; letter-spacing:.16em; font-size:.72rem; font-weight:700; color:#eebc69; }
+.ranking h2 { font-size:clamp(2.4rem,4vw,4.4rem); line-height:1; letter-spacing:-.06em; margin:12px 0; }
+.ranking-heading p { color:#b9c8bd; line-height:1.4; margin:0; }
+.ranking ol { list-style:none; margin:0; padding:0; }
+.member { display:flex; gap:clamp(9px,1.2vw,18px); align-items:center; padding:15px 0; border-top:1px solid #4b6859; min-width:0; }
+.member.featured { background:linear-gradient(90deg,#1c3a2e,transparent); padding-left:10px; }
+.member-rank { width:26px; flex:none; color:#eebc69; font-size:.8rem; font-weight:700; font-variant-numeric:tabular-nums; }
+.member-avatar { width:42px; height:42px; flex:none; border-radius:50%; display:grid; place-items:center; overflow:hidden; background:#547368; color:#f6f2e8; font-weight:800; border:2px solid #85a08e; }
+.featured .member-avatar { width:54px; height:54px; border-color:#eebc69; }
+.member-avatar img { width:100%; height:100%; object-fit:cover; }
+.member-details { min-width:0; flex:1; }
+.member-details strong { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:clamp(.85rem,1.35vw,1.08rem); }
+.member-bar { display:block; height:5px; margin-top:9px; background:#385446; border-radius:9px; overflow:hidden; }
+.member-bar:after { content:''; display:block; width:var(--fill); height:100%; background:#eebc69; border-radius:9px; }
+.ranking-reputation .member-bar:after { background:#a9c8a9; }
+.member-score { flex:none; min-width:75px; text-align:right; font-variant-numeric:tabular-nums; }
+.member-score strong { display:block; font-size:clamp(1rem,1.55vw,1.35rem); letter-spacing:-.03em; }
+.member-score small { display:block; color:#a9bba9; text-transform:uppercase; letter-spacing:.06em; font-size:.63rem; }
+.archive-note { max-width:750px; margin:65px 0 0; padding:19px 0 0; border-top:1px solid #60756a; color:#b9c8bd; line-height:1.6; font-size:.86rem; }
+.load-error { grid-column:1/-1; color:#eebc69; }
+@media(max-width:900px) { .rankings { grid-template-columns:1fr; gap:70px; } .ranking-heading { min-height:130px; } }
+@media(max-width:600px) { .community-main { padding:55px 0 65px; } .stat-strip { margin:50px 0 65px; } .stat-strip > div { padding:20px 10px 22px 0; } .stat-strip > div + div { padding-left:12px; } .stat-strip strong { font-size:clamp(1.35rem,6vw,2.1rem); } .stat-strip span { font-size:.69rem; line-height:1.3; } .member-score { min-width:66px; } .member-avatar { width:37px; height:37px; } .featured .member-avatar { width:43px; height:43px; } }
