@@ -11,6 +11,9 @@ body { margin: 0; }
 .masthead { height: 104px; flex: none; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #547168; }
 .wordmark { color: #f6f2e8; text-decoration: none; font-weight: 900; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.06em; }
 .wordmark span { color: #eebc69; }
+.masthead nav { display: flex; gap: clamp(16px, 3vw, 36px); }
+.masthead nav a { color: #c2d2c7; text-decoration: none; font-size: .9rem; }
+.masthead nav a[aria-current], .masthead nav a:hover { color: #eebc69; }
 .header-note { color: #b9c8bd; font-size: .9rem; letter-spacing: .02em; }
 main { flex: 1; display: flex; align-items: center; }
 .hero { width: 100%; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); grid-template-areas: 'top top' 'copy art' 'bottom bottom'; align-items: center; column-gap: 6vw; row-gap: clamp(22px, 3vw, 42px); padding: 24px 0 38px; }
@@ -44,6 +47,7 @@ footer span:last-child { text-align: right; }
 }
 @media (max-width: 600px) {
   .masthead { height: 82px; }
+  .masthead nav a { font-size: .77rem; }
   .header-note { display: none; }
   .hero { row-gap: 34px; padding: 24px 0 44px; }
   h1 { font-size: clamp(4.2rem, 16vw, 7rem); margin-bottom: 32px; }
