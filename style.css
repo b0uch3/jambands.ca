@@ -30,6 +30,9 @@ h1 { font-size: clamp(4.5rem, 10vw, 10rem); line-height: .89; letter-spacing: -.
 .record { position: relative; width: min(34vw, 420px); height: min(34vw, 420px); min-width: 315px; min-height: 315px; border-radius: 50%; background: repeating-radial-gradient(circle at 50% 50%, #17231f 0 3px, #26332d 4px 5px, #121e1b 6px 9px); border: 12px solid #18221e; box-shadow: 20px 25px 0 #0a1b16, 25px 35px 45px #081a15; display: grid; place-items: center; transform: rotate(-13deg); }
 .record-ring { position: absolute; width: 81%; height: 81%; border: 1px solid #657069; border-radius: 50%; opacity: .5; }
 .record-label { width: 37%; height: 37%; border-radius: 50%; background: #eebc69; color: #102720; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 7px solid #d7a85c; text-align: center; font-weight: 900; font-size: clamp(.7rem, 1.15vw, 1rem); line-height: 1.1; letter-spacing: -.025em; padding: 7px; }
+.record-label { position: relative; z-index: 1; text-decoration: none; cursor: pointer; }
+.record-label:hover { background: #f8cd86; }
+.record-label:focus-visible { outline: 4px solid #f6f2e8; outline-offset: 5px; }
 .record-label:after { content: ''; width: 6px; height: 6px; background: #102720; border-radius: 50%; margin-top: 9px; }
 .art-caption { position: absolute; bottom: -24px; right: 0; font-size: .7rem; letter-spacing: .22em; color: #9db1a5; }
 footer { min-height: 80px; border-top: 1px solid #547168; display: flex; gap: 24px; align-items: center; justify-content: space-between; color: #9db1a5; font-size: .85rem; }
