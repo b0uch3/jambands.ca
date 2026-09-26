@@ -1,0 +1,32 @@
+{
+  "snapshotDate": "2026-09-26",
+  "source": {
+    "mostContent": "https://jambands.ca/topmembers/?filter=member_posts",
+    "mostReputation": "https://jambands.ca/topmembers/?filter=pp_reputation_points"
+  },
+  "note": "Top-ten values transcribed from the live leaderboards during the September 2026 archive work. Avatar images and member IDs have not yet been preserved.",
+  "mostContent": [
+    {"name":"bouche","value":26778,"avatar":null},
+    {"name":"Booche","value":25587,"avatar":null},
+    {"name":"bradm","value":23003,"avatar":null},
+    {"name":"Davey Boy 2.0","value":15339,"avatar":null},
+    {"name":"AD","value":15004,"avatar":null},
+    {"name":"Kanada Kev","value":13293,"avatar":null},
+    {"name":"ollie","value":12615,"avatar":null},
+    {"name":"Jaimoe","value":12590,"avatar":null},
+    {"name":"Schwa.","value":10755,"avatar":null},
+    {"name":"NewRider","value":10369,"avatar":null}
+  ],
+  "mostReputation": [
+    {"name":"Esau.","value":278,"avatar":null},
+    {"name":"Booche","value":236,"avatar":null},
+    {"name":"Davey Boy 2.0","value":207,"avatar":null},
+    {"name":"c-towns","value":168,"avatar":null},
+    {"name":"Velvet","value":160,"avatar":null},
+    {"name":"edger","value":118,"avatar":null},
+    {"name":"bouche","value":112,"avatar":null},
+    {"name":"bradm","value":108,"avatar":null},
+    {"name":"Hartamophone","value":101,"avatar":null},
+    {"name":"phorbesie","value":94,"avatar":null}
+  ]
+}
