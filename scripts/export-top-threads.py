@@ -27,6 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RANKINGS = ROOT / 'data' / 'top-threads.json'
 INSERT = re.compile(rb'^INSERT INTO `(?P<table>forums_archive_posts|forums_posts|forums_topics)` VALUES ')
 PAGE_SIZE = 50
+PAGES_PER_CHUNK = 10
 EMAIL = re.compile(r'(?<![\w.+-])[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}(?![\w.-])')
 
 
@@ -171,7 +172,7 @@ def archive(backup, output):
     ids = set(ranking['mostReplies'] + ranking['mostViews'])
     info = {thread['id']: thread for thread in ranking['threads']}
     topics, posts = collect(backup, ids)
-    manifest = {'pageSize': PAGE_SIZE, 'topics': {}}
+    manifest = {'pageSize': PAGE_SIZE, 'pagesPerChunk': PAGES_PER_CHUNK, 'topics': {}}
     output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(output, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as target:
         for tid in sorted(ids):
@@ -192,10 +193,11 @@ def archive(backup, output):
                 'title': topics[tid]['title'], 'starter': info[tid]['author'],
                 'started': info[tid]['started'], 'posts': len(entries), 'pages': total_pages,
             }
-            for page in range(1, total_pages + 1):
-                chunk = entries[(page - 1) * PAGE_SIZE:page * PAGE_SIZE]
-                target.writestr(f'data/threads/{tid}/page-{page}.json',
-                                json.dumps({'topicId': tid, 'page': page, 'posts': chunk}, ensure_ascii=False))
+            chunk_size = PAGE_SIZE * PAGES_PER_CHUNK
+            for chunk in range(1, (len(entries) + chunk_size - 1) // chunk_size + 1):
+                content = entries[(chunk - 1) * chunk_size:chunk * chunk_size]
+                target.writestr(f'data/threads/{tid}/chunk-{chunk}.json',
+                                json.dumps({'topicId': tid, 'chunk': chunk, 'posts': content}, ensure_ascii=False))
             print(f'{tid}: {len(entries)} posts across {total_pages} pages', flush=True)
         target.writestr('data/threads/manifest.json', json.dumps(manifest, indent=2, ensure_ascii=False))
     print(f'Created {output} ({output.stat().st_size:,} bytes). Review before publishing.')

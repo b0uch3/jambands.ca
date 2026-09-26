@@ -12,10 +12,14 @@
 .topic-post-date { display:block; color:#a9bba9; font-size:.78rem; margin-top:7px; }
 .topic-post-body { color:#e1e9df; line-height:1.65; white-space:pre-wrap; overflow-wrap:anywhere; font-size:1rem; }
 .topic-post-body p { margin:0; }
-.topic-pager { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 0; border-top:1px solid #4b6859; color:#b9c8bd; font-size:.84rem; }
+.topic-pager { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:18px 0; border-top:1px solid #4b6859; color:#b9c8bd; font-size:.84rem; }
 .topic-pager a { color:#eebc69; text-decoration:none; font-weight:700; }
 .topic-pager a:hover { text-decoration:underline; }
 .topic-pager a[aria-disabled="true"] { color:#60756a; pointer-events:none; }
 .topic-pager span { text-align:center; }
+.topic-jump { display:flex; align-items:center; gap:7px; }
+.topic-jump input[type="number"] { width:70px; padding:7px; border:1px solid #60756a; background:#173127; color:#f6f2e8; font:inherit; }
+.topic-jump button { padding:8px 11px; border:1px solid #927c58; background:#244336; color:#eebc69; font:inherit; font-weight:700; cursor:pointer; }
+.topic-jump button:hover { background:#385446; }
 .topic-error { color:#eebc69; padding:25px 0; }
-@media(max-width:650px) { .topic-post { grid-template-columns:1fr; gap:13px; } .topic-post-date { display:inline; margin-left:8px; } .topic-header { margin-top:48px; } }
+@media(max-width:650px) { .topic-post { grid-template-columns:1fr; gap:13px; } .topic-post-date { display:inline; margin-left:8px; } .topic-header { margin-top:48px; } .topic-pager { justify-content:center; } }

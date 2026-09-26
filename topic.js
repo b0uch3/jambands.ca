@@ -16,11 +16,30 @@ function pager(element, page, total) {
   if (page === 1) previous.setAttribute('aria-disabled', 'true');
   const status = document.createElement('span');
   status.textContent = `Page ${page.toLocaleString('en-CA')} of ${total.toLocaleString('en-CA')}`;
+  const jump = document.createElement('form');
+  jump.className = 'topic-jump';
+  jump.action = 'topic.html';
+  jump.method = 'get';
+  const idInput = document.createElement('input');
+  idInput.type = 'hidden';
+  idInput.name = 'id';
+  idInput.value = topicId;
+  const pageInput = document.createElement('input');
+  pageInput.type = 'number';
+  pageInput.name = 'page';
+  pageInput.min = '1';
+  pageInput.max = String(total);
+  pageInput.value = String(page);
+  pageInput.setAttribute('aria-label', 'Jump to page');
+  const go = document.createElement('button');
+  go.type = 'submit';
+  go.textContent = 'Go';
+  jump.append(idInput, pageInput, go);
   const next = document.createElement('a');
   next.textContent = 'Next →';
   next.href = pageLink(Math.min(total, page + 1));
   if (page === total) next.setAttribute('aria-disabled', 'true');
-  element.replaceChildren(previous, status, next);
+  element.replaceChildren(previous, status, jump, next);
 }
 
 function showError(message) {
@@ -43,17 +62,24 @@ async function showTopic() {
   const info = manifest.topics[topicId];
   if (!info) throw new Error('That conversation is not in the archive.');
   if (requestedPage > info.pages) throw new Error('That page is not in the archive.');
-  const response = await fetch(`data/threads/${topicId}/page-${requestedPage}.json`);
+  const pagesPerChunk = manifest.pagesPerChunk;
+  if (!Number.isSafeInteger(pagesPerChunk) || pagesPerChunk < 1) {
+    throw new Error('The archive index could not be read.');
+  }
+  const chunk = Math.ceil(requestedPage / pagesPerChunk);
+  const response = await fetch(`data/threads/${topicId}/chunk-${chunk}.json`);
   if (!response.ok) throw new Error('This page of posts could not be loaded.');
   const data = await response.json();
-  if (data.topicId !== Number(topicId) || data.page !== requestedPage || !Array.isArray(data.posts)) {
+  if (data.topicId !== Number(topicId) || data.chunk !== chunk || !Array.isArray(data.posts)) {
     throw new Error('This page of posts could not be read.');
   }
   document.title = `${info.title} · Jambands.ca archive`;
   title.textContent = info.title;
   meta.textContent = `Started by ${info.starter} · ${info.started} · ${info.posts.toLocaleString('en-CA')} preserved posts`;
   const fragment = document.createDocumentFragment();
-  data.posts.forEach(post => {
+  const pageSize = manifest.pageSize;
+  const start = ((requestedPage - 1) % pagesPerChunk) * pageSize;
+  data.posts.slice(start, start + pageSize).forEach(post => {
     const article = document.createElement('article');
     article.className = 'topic-post';
     article.id = `post-${post.id}`;
