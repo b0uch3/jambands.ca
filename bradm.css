@@ -27,5 +27,17 @@
 .archive-link,.thread-link { color:#eebc69; font-weight:700; line-height:1.5; }
 .source-note { font-size:.82rem!important; color:#9db1a5!important; margin-top:30px!important; }
 .tribute-signoff { color:#eebc69; text-align:center; font-size:clamp(2.5rem,6vw,5rem); font-weight:900; letter-spacing:-.06em; margin:90px 0 0; }
+.thread-main { display:block; width:100%; max-width:950px; padding:clamp(65px,8vw,120px) 0; }
+.thread-main h1 { font-size:clamp(4rem,9vw,8rem); margin:0 0 35px; }
+.thread-main h1 span { color:#eebc69; }
+.thread-intro { color:#d9e2d9; font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.6; max-width:800px; }
+.thread-pages { list-style:none; padding:0; margin:60px 0 32px; border-top:1px solid #60756a; }
+.thread-pages li { border-bottom:1px solid #60756a; }
+.thread-pages a { display:flex; align-items:center; gap:20px; padding:27px 5px; color:#f6f2e8; text-decoration:none; }
+.thread-pages a:hover { color:#eebc69; background:#1c3a2e; }
+.thread-pages strong { font-size:1.45rem; min-width:100px; }
+.thread-pages span:nth-child(2) { flex:1; color:#b9c8bd; }
+.thread-pages span:last-child { color:#eebc69; font-size:.85rem; white-space:nowrap; }
+.thread-footnote { color:#abc0b1; font-size:.85rem; line-height:1.6; margin:0 0 38px; }
 @media(max-width:850px) { .tribute-hero { min-height:0; grid-template-columns:1fr; padding:55px 0 70px; } .tribute-art { justify-items:start; } .tape-disc { width:250px; } .tape-caption { text-align:left; } .remembrance,.listening,.community-memory { grid-template-columns:1fr; gap:20px; padding:60px 0; } }
-@media(max-width:600px) { .tribute-heading h1 { font-size:clamp(4.3rem,16vw,7rem); } .tribute-art { gap:23px; } .tape-disc { width:210px; } .recording { padding:18px; gap:13px; } .recording-icon { width:42px; height:42px; font-size:1rem; } .recording strong { font-size:1rem; } .recording small { font-size:.7rem; } .tribute-quote { padding:70px 0; } }
+@media(max-width:600px) { .tribute-heading h1 { font-size:clamp(4.3rem,16vw,7rem); } .tribute-art { gap:23px; } .tape-disc { width:210px; } .recording { padding:18px; gap:13px; } .recording-icon { width:42px; height:42px; font-size:1rem; } .recording strong { font-size:1rem; } .recording small { font-size:.7rem; } .tribute-quote { padding:70px 0; } .thread-pages a { flex-wrap:wrap; gap:7px 15px; } .thread-pages span:nth-child(2) { flex-basis:calc(100% - 115px); } .thread-pages span:last-child { margin-left:115px; } }

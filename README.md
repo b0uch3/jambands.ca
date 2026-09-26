@@ -10,7 +10,9 @@ The raw forum backup and post text are processed locally and are not stored in t
 
 ## Remembering BradM
 
-`bradm.html` is a memorial to Brad McFarlane (BradM), based on the three-page community tribute thread from November–December 2017. It uses his archived forum avatar, recalls his taping and generosity in paraphrase, and links to a nero show selected by a member in that thread. Archive.org metadata identifies BradM as the uploader of that recording; it lists the taper as unknown, so the page does not attribute that particular tape to him. The original saved tribute pages remain outside this public repository.
+`bradm.html` is a memorial to Brad McFarlane (BradM), based on the three-page community tribute thread from November 2017 through September 2019. It uses his archived forum avatar, recalls his taping and generosity in paraphrase, and links to a nero show selected by a member in that thread. Archive.org metadata identifies BradM as the uploader of that recording; it lists the taper as unknown, so the page does not attribute that particular tape to him.
+
+`bradm-thread.html` links to the three original saved PDF pages under `archive/bradm-thread/`. These preserve the forum discussion, including posts through September 2019, after the Invision site goes offline. The files are copies of the three pages supplied by the site owner; they do not include account credentials or the raw database backup.
 
 ## Community stats
 
