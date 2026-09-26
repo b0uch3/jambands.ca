@@ -75,7 +75,7 @@ function renderThreads(list, ids, threads, focus) {
     rank.textContent = String(index + 1).padStart(2, '0');
     const title = document.createElement('h4');
     const link = document.createElement('a');
-    link.href = thread.url;
+    link.href = `topic.html?id=${thread.id}`;
     link.textContent = thread.title;
     title.append(link);
     heading.append(rank, title);
