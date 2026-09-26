@@ -24,10 +24,19 @@ function renderMembers(list, members, unit) {
     details.className = 'member-details';
     const name = document.createElement('strong');
     name.textContent = member.name;
+    if (member.memberId === 80) {
+      const remembrance = document.createElement('a');
+      remembrance.className = 'member-remembrance';
+      remembrance.href = 'bradm.html';
+      remembrance.textContent = 'Remember BradM';
+      details.append(name, remembrance);
+    } else {
+      details.append(name);
+    }
     const bar = document.createElement('span');
     bar.className = 'member-bar';
     bar.style.setProperty('--fill', `${member.value / leader * 100}%`);
-    details.append(name, bar);
+    details.append(bar);
     const score = document.createElement('span');
     score.className = 'member-score';
     const value = document.createElement('strong');
