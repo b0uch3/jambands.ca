@@ -61,3 +61,60 @@ fetch('data/top-members.json')
   .catch(() => {
     document.querySelector('#rankings').insertAdjacentHTML('afterbegin', '<p class="load-error" role="alert">The archived rankings could not be loaded. Please try again later.</p>');
   });
+
+function renderThreads(list, ids, threads, focus) {
+  ids.forEach((id, index) => {
+    const thread = threads.get(id);
+    if (!thread) return;
+    const item = document.createElement('li');
+    item.className = 'thread-item';
+    const heading = document.createElement('div');
+    heading.className = 'thread-item-heading';
+    const rank = document.createElement('span');
+    rank.className = 'thread-rank';
+    rank.textContent = String(index + 1).padStart(2, '0');
+    const title = document.createElement('h4');
+    const link = document.createElement('a');
+    link.href = thread.url;
+    link.textContent = thread.title;
+    title.append(link);
+    heading.append(rank, title);
+    const byline = document.createElement('p');
+    byline.className = 'thread-byline';
+    byline.append('Started by ');
+    const author = document.createElement('strong');
+    author.textContent = thread.author;
+    byline.append(author, ` · ${thread.started}`);
+    const description = document.createElement('p');
+    description.className = 'thread-description';
+    description.textContent = thread.description;
+    const counts = document.createElement('p');
+    counts.className = 'thread-counts';
+    const primary = document.createElement('strong');
+    primary.textContent = `${focus === 'replies' ? thread.replies : thread.views} ${focus}`;
+    counts.append(primary, ` · ${focus === 'replies' ? `${thread.views} views` : `${thread.replies} replies`}`);
+    item.append(heading, byline, description);
+    if (thread.example && index < 2) {
+      const example = document.createElement('p');
+      example.className = 'thread-example';
+      example.textContent = `From the conversation: ${thread.example}`;
+      item.append(example);
+    }
+    item.append(counts);
+    list.append(item);
+  });
+}
+
+fetch('data/top-threads.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Could not load the archived threads.');
+    return response.json();
+  })
+  .then(data => {
+    const threads = new Map(data.threads.map(thread => [thread.id, thread]));
+    renderThreads(document.querySelector('#thread-replies-list'), data.mostReplies, threads, 'replies');
+    renderThreads(document.querySelector('#thread-views-list'), data.mostViews, threads, 'views');
+  })
+  .catch(() => {
+    document.querySelector('#thread-rankings').insertAdjacentHTML('afterbegin', '<p class="load-error" role="alert">The archived threads could not be loaded. Please try again later.</p>');
+  });
