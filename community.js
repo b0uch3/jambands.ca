@@ -28,7 +28,7 @@ function renderMembers(list, members, unit) {
       const remembrance = document.createElement('a');
       remembrance.className = 'member-remembrance';
       remembrance.href = 'bradm.html';
-      remembrance.textContent = 'In memory · 2017';
+      remembrance.textContent = 'In rememberance · 2017';
       details.append(name, remembrance);
     } else {
       details.append(name);
