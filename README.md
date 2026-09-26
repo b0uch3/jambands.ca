@@ -1,13 +1,9 @@
 # Jambands.ca
 
-A simple static landing page for Jambands.ca.
+A simple static landing page for the Jambands.ca community.
 
-## Preview
+Preview: https://b0uch3.github.io/jambands.ca/
 
-Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit http://localhost:8000.
+The artist names in the page background are sized according to preliminary counts of Soundboard posts mentioning each name. The current five-band pilot covers Nero, The Slip, Burt Neilson Band, Grand Theft Bus, and Hiway Freeker. These are phrase matches, not verified artist references; ambiguous names need review before treating the counts as final.
 
-## GitHub Pages
-
-Create a **public** repository named `jambands.ca`, upload `index.html` and `style.css` to its root, then select **Settings → Pages → Build and deployment → Deploy from a branch**, branch `main`, folder `/ (root)`. Visit the Pages URL shown in Settings to review it.
-
-Do not add a `CNAME` file or change domain DNS until ready to replace the existing forum. Once ready, configure the custom domain in GitHub Pages, then follow GitHub's displayed DNS and domain verification instructions at GoDaddy. Keep mail-related DNS records separate from web hosting records.
+The raw forum backup and post text are processed locally and are not stored in this public repository. The site remains at its GitHub Pages preview address until the custom domain is deliberately switched.
