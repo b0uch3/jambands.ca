@@ -46,8 +46,8 @@ fetch('data/top-members.json')
     return response.json();
   })
   .then(data => {
-    renderMembers(document.querySelector('#content-list'), data.mostContent, 'content');
-    renderMembers(document.querySelector('#reputation-list'), data.mostReputation, 'points');
+    renderMembers(document.querySelector('#content-list'), data.mostContent.slice(0, 10), 'content');
+    renderMembers(document.querySelector('#reputation-list'), data.mostReputation.slice(0, 10), 'points');
   })
   .catch(() => {
     document.querySelector('#rankings').insertAdjacentHTML('afterbegin', '<p class="load-error" role="alert">The archived rankings could not be loaded. Please try again later.</p>');
