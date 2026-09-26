@@ -46,7 +46,8 @@ footer span:last-child { text-align: right; }
   .art-caption { bottom: -15px; }
 }
 @media (max-width: 600px) {
-  .masthead { height: 82px; }
+  .masthead { height: auto; min-height: 82px; flex-wrap: wrap; gap: 12px; padding: 18px 0; }
+  .masthead nav { width: 100%; justify-content: space-between; gap: 8px; }
   .masthead nav a { font-size: .77rem; }
   .header-note { display: none; }
   .hero { row-gap: 34px; padding: 24px 0 44px; }

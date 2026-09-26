@@ -1,0 +1,43 @@
+.tribute-main { display:block; width:100%; padding:0 0 85px; }
+.tribute-hero { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr); align-items:center; gap:clamp(30px,7vw,120px); min-height:650px; padding:75px 0 80px; }
+.tribute-heading h1 { font-size:clamp(4.7rem,10vw,10rem); line-height:.88; letter-spacing:-.085em; margin:0 0 35px; }
+.tribute-heading h1 span { color:#eebc69; }
+.tribute-deck { max-width:680px; color:#d9e2d9; font-size:clamp(1.25rem,2vw,1.75rem); line-height:1.45; margin:0; }
+.tribute-art { display:grid; place-items:center; gap:32px; }
+.tape-disc { width:min(32vw,385px); aspect-ratio:1; border-radius:50%; display:grid; place-items:center; background:repeating-radial-gradient(circle,#182720 0 4px,#29392f 5px 6px,#14241e 7px 10px); border:10px solid #24372d; box-shadow:18px 23px 0 #091b15,22px 30px 35px #071811; transform:rotate(-9deg); }
+.tape-disc img { width:46%; aspect-ratio:1; object-fit:cover; border-radius:50%; border:7px solid #eebc69; background:#eebc69; transform:rotate(9deg); }
+.tape-caption { color:#abc0b1; font-size:.78rem; letter-spacing:.08em; text-align:center; }
+.tribute-rule { border-top:1px solid #65796b; border-bottom:1px solid #65796b; color:#eebc69; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.14em; padding:21px 0; }
+.remembrance,.listening,.community-memory { display:grid; grid-template-columns:minmax(170px,.32fr) minmax(0,1fr); gap:clamp(25px,5vw,90px); padding:85px 0; border-bottom:1px solid #526b5c; }
+.section-label { color:#eebc69; font-size:.77rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; padding-top:8px; }
+.section-copy { max-width:810px; }
+.section-copy h2 { font-size:clamp(2.5rem,5.5vw,5rem); line-height:1; letter-spacing:-.07em; margin:0 0 30px; }
+.section-copy p { color:#d9e2d9; line-height:1.7; font-size:clamp(1.06rem,1.45vw,1.3rem); margin:0 0 22px; }
+.section-copy strong { color:#eebc69; }
+.tribute-quote { text-align:center; padding:95px 0; margin:0; border-bottom:1px solid #526b5c; }
+.tribute-quote p { color:#eebc69; font-size:clamp(2.5rem,7vw,6.5rem); font-weight:900; letter-spacing:-.065em; line-height:1; margin:0 0 25px; }
+.tribute-quote cite { color:#b9c8bd; font-style:normal; font-size:.87rem; }
+.recording { display:flex; align-items:center; gap:20px; padding:28px; margin:30px 0 25px; border:1px solid #a98b58; background:#244234; color:#f6f2e8; text-decoration:none; }
+.recording:hover,.recording:focus-visible { background:#305440; }
+.recording-icon { display:grid; place-items:center; flex:none; width:58px; height:58px; border-radius:50%; background:#eebc69; color:#102720; font-size:1.4rem; padding-left:3px; }
+.recording span:nth-child(2) { flex:1; }
+.recording strong { display:block; color:#f6f2e8; font-size:1.35rem; }
+.recording small { display:block; color:#b9c8bd; margin-top:6px; line-height:1.35; }
+.recording > span:last-child { color:#eebc69; }
+.archive-link,.thread-link { color:#eebc69; font-weight:700; line-height:1.5; }
+.source-note { font-size:.82rem!important; color:#9db1a5!important; margin-top:30px!important; }
+.tribute-signoff { color:#eebc69; text-align:center; font-size:clamp(2.5rem,6vw,5rem); font-weight:900; letter-spacing:-.06em; margin:90px 0 0; }
+.thread-main { display:block; width:100%; max-width:950px; padding:clamp(65px,8vw,120px) 0; }
+.thread-main h1 { font-size:clamp(4rem,9vw,8rem); margin:0 0 35px; }
+.thread-main h1 span { color:#eebc69; }
+.thread-intro { color:#d9e2d9; font-size:clamp(1.1rem,1.8vw,1.4rem); line-height:1.6; max-width:800px; }
+.thread-pages { list-style:none; padding:0; margin:60px 0 32px; border-top:1px solid #60756a; }
+.thread-pages li { border-bottom:1px solid #60756a; }
+.thread-pages a { display:flex; align-items:center; gap:20px; padding:27px 5px; color:#f6f2e8; text-decoration:none; }
+.thread-pages a:hover { color:#eebc69; background:#1c3a2e; }
+.thread-pages strong { font-size:1.45rem; min-width:100px; }
+.thread-pages span:nth-child(2) { flex:1; color:#b9c8bd; }
+.thread-pages span:last-child { color:#eebc69; font-size:.85rem; white-space:nowrap; }
+.thread-footnote { color:#abc0b1; font-size:.85rem; line-height:1.6; margin:0 0 38px; }
+@media(max-width:850px) { .tribute-hero { min-height:0; grid-template-columns:1fr; padding:55px 0 70px; } .tribute-art { justify-items:start; } .tape-disc { width:250px; } .tape-caption { text-align:left; } .remembrance,.listening,.community-memory { grid-template-columns:1fr; gap:20px; padding:60px 0; } }
+@media(max-width:600px) { .tribute-heading h1 { font-size:clamp(4.3rem,16vw,7rem); } .tribute-art { gap:23px; } .tape-disc { width:210px; } .recording { padding:18px; gap:13px; } .recording-icon { width:42px; height:42px; font-size:1rem; } .recording strong { font-size:1rem; } .recording small { font-size:.7rem; } .tribute-quote { padding:70px 0; } .thread-pages a { flex-wrap:wrap; gap:7px 15px; } .thread-pages span:nth-child(2) { flex-basis:calc(100% - 115px); } .thread-pages span:last-child { margin-left:115px; } }
