@@ -1,32 +1,780 @@
 {
   "snapshotDate": "2026-09-26",
+  "scope": "First 48 visible entries in each saved leaderboard page; later pages not captured.",
   "source": {
     "mostContent": "https://jambands.ca/topmembers/?filter=member_posts",
     "mostReputation": "https://jambands.ca/topmembers/?filter=pp_reputation_points"
   },
-  "note": "Top-ten values transcribed from the live leaderboards during the September 2026 archive work. Avatar images and member IDs have not yet been preserved.",
   "mostContent": [
-    {"name":"bouche","value":26778,"avatar":null},
-    {"name":"Booche","value":25587,"avatar":null},
-    {"name":"bradm","value":23003,"avatar":null},
-    {"name":"Davey Boy 2.0","value":15339,"avatar":null},
-    {"name":"AD","value":15004,"avatar":null},
-    {"name":"Kanada Kev","value":13293,"avatar":null},
-    {"name":"ollie","value":12615,"avatar":null},
-    {"name":"Jaimoe","value":12590,"avatar":null},
-    {"name":"Schwa.","value":10755,"avatar":null},
-    {"name":"NewRider","value":10369,"avatar":null}
+    {
+      "rank": 1,
+      "memberId": 1,
+      "name": "bouche",
+      "value": 26778,
+      "profileUrl": "https://jambands.ca/profile/1-bouche/",
+      "avatar": null
+    },
+    {
+      "rank": 2,
+      "memberId": 3,
+      "name": "Booche",
+      "value": 25587,
+      "profileUrl": "https://jambands.ca/profile/3-booche/",
+      "avatar": null
+    },
+    {
+      "rank": 3,
+      "memberId": 80,
+      "name": "bradm",
+      "value": 23003,
+      "profileUrl": "https://jambands.ca/profile/80-bradm/",
+      "avatar": null
+    },
+    {
+      "rank": 4,
+      "memberId": 7,
+      "name": "Davey Boy 2.0",
+      "value": 15339,
+      "profileUrl": "https://jambands.ca/profile/7-davey-boy-20/",
+      "avatar": null
+    },
+    {
+      "rank": 5,
+      "memberId": 122,
+      "name": "AD",
+      "value": 15004,
+      "profileUrl": "https://jambands.ca/profile/122-ad/",
+      "avatar": null
+    },
+    {
+      "rank": 6,
+      "memberId": 1095,
+      "name": "Kanada Kev",
+      "value": 13293,
+      "profileUrl": "https://jambands.ca/profile/1095-kanada-kev/",
+      "avatar": null
+    },
+    {
+      "rank": 7,
+      "memberId": 745,
+      "name": "ollie",
+      "value": 12615,
+      "profileUrl": "https://jambands.ca/profile/745-ollie/",
+      "avatar": null
+    },
+    {
+      "rank": 8,
+      "memberId": 55,
+      "name": "Jaimoe",
+      "value": 12590,
+      "profileUrl": "https://jambands.ca/profile/55-jaimoe/",
+      "avatar": null
+    },
+    {
+      "rank": 9,
+      "memberId": 125,
+      "name": "Schwa.",
+      "value": 10755,
+      "profileUrl": "https://jambands.ca/profile/125-schwa/",
+      "avatar": null
+    },
+    {
+      "rank": 10,
+      "memberId": 249,
+      "name": "NewRider",
+      "value": 10369,
+      "profileUrl": "https://jambands.ca/profile/249-newrider/",
+      "avatar": null
+    },
+    {
+      "rank": 11,
+      "memberId": 324,
+      "name": "c-towns",
+      "value": 10135,
+      "profileUrl": "https://jambands.ca/profile/324-c-towns/",
+      "avatar": null
+    },
+    {
+      "rank": 12,
+      "memberId": 135,
+      "name": "Velvet",
+      "value": 9927,
+      "profileUrl": "https://jambands.ca/profile/135-velvet/",
+      "avatar": null
+    },
+    {
+      "rank": 13,
+      "memberId": 143,
+      "name": "rubberdinghy",
+      "value": 9703,
+      "profileUrl": "https://jambands.ca/profile/143-rubberdinghy/",
+      "avatar": null
+    },
+    {
+      "rank": 14,
+      "memberId": 49,
+      "name": "MarcO",
+      "value": 9213,
+      "profileUrl": "https://jambands.ca/profile/49-marco/",
+      "avatar": null
+    },
+    {
+      "rank": 15,
+      "memberId": 220,
+      "name": "Esau",
+      "value": 8881,
+      "profileUrl": "https://jambands.ca/profile/220-esau/",
+      "avatar": null
+    },
+    {
+      "rank": 16,
+      "memberId": 531,
+      "name": "paisley",
+      "value": 8708,
+      "profileUrl": "https://jambands.ca/profile/531-paisley/",
+      "avatar": null
+    },
+    {
+      "rank": 17,
+      "memberId": 127,
+      "name": "Northern Wish",
+      "value": 8347,
+      "profileUrl": "https://jambands.ca/profile/127-northern-wish/",
+      "avatar": null
+    },
+    {
+      "rank": 18,
+      "memberId": 402,
+      "name": "Jay Funk Dawg",
+      "value": 8245,
+      "profileUrl": "https://jambands.ca/profile/402-jay-funk-dawg/",
+      "avatar": null
+    },
+    {
+      "rank": 19,
+      "memberId": 1858,
+      "name": "Dr_Evil_Mouse",
+      "value": 7494,
+      "profileUrl": "https://jambands.ca/profile/1858-dr_evil_mouse/",
+      "avatar": null
+    },
+    {
+      "rank": 20,
+      "memberId": 322,
+      "name": "Basher",
+      "value": 7282,
+      "profileUrl": "https://jambands.ca/profile/322-basher/",
+      "avatar": null
+    },
+    {
+      "rank": 21,
+      "memberId": 114,
+      "name": "hamilton",
+      "value": 7023,
+      "profileUrl": "https://jambands.ca/profile/114-hamilton/",
+      "avatar": null
+    },
+    {
+      "rank": 22,
+      "memberId": 1549,
+      "name": "StoneMtn",
+      "value": 7008,
+      "profileUrl": "https://jambands.ca/profile/1549-stonemtn/",
+      "avatar": null
+    },
+    {
+      "rank": 23,
+      "memberId": 2380,
+      "name": "Esau.",
+      "value": 6884,
+      "profileUrl": "https://jambands.ca/profile/2380-esau/",
+      "avatar": null
+    },
+    {
+      "rank": 24,
+      "memberId": 66,
+      "name": "secondtube",
+      "value": 6781,
+      "profileUrl": "https://jambands.ca/profile/66-secondtube/",
+      "avatar": null
+    },
+    {
+      "rank": 25,
+      "memberId": 2036,
+      "name": "phishtaper",
+      "value": 6351,
+      "profileUrl": "https://jambands.ca/profile/2036-phishtaper/",
+      "avatar": null
+    },
+    {
+      "rank": 26,
+      "memberId": 168,
+      "name": "Ms.Huxtable",
+      "value": 6116,
+      "profileUrl": "https://jambands.ca/profile/168-mshuxtable/",
+      "avatar": null
+    },
+    {
+      "rank": 27,
+      "memberId": 104,
+      "name": "shainhouse",
+      "value": 6084,
+      "profileUrl": "https://jambands.ca/profile/104-shainhouse/",
+      "avatar": null
+    },
+    {
+      "rank": 28,
+      "memberId": 380,
+      "name": "Del",
+      "value": 6058,
+      "profileUrl": "https://jambands.ca/profile/380-del/",
+      "avatar": null
+    },
+    {
+      "rank": 29,
+      "memberId": 2050,
+      "name": "phorbesie",
+      "value": 5994,
+      "profileUrl": "https://jambands.ca/profile/2050-phorbesie/",
+      "avatar": null
+    },
+    {
+      "rank": 30,
+      "memberId": 47,
+      "name": "SaggyBalls",
+      "value": 5781,
+      "profileUrl": "https://jambands.ca/profile/47-saggyballs/",
+      "avatar": null
+    },
+    {
+      "rank": 31,
+      "memberId": 466,
+      "name": "guigsy",
+      "value": 5718,
+      "profileUrl": "https://jambands.ca/profile/466-guigsy/",
+      "avatar": null
+    },
+    {
+      "rank": 32,
+      "memberId": 190,
+      "name": "dave-O",
+      "value": 5626,
+      "profileUrl": "https://jambands.ca/profile/190-dave-o/",
+      "avatar": null
+    },
+    {
+      "rank": 33,
+      "memberId": 17,
+      "name": "DevO",
+      "value": 5502,
+      "profileUrl": "https://jambands.ca/profile/17-devo/",
+      "avatar": null
+    },
+    {
+      "rank": 34,
+      "memberId": 2064,
+      "name": "Hal Johnson",
+      "value": 5314,
+      "profileUrl": "https://jambands.ca/profile/2064-hal-johnson/",
+      "avatar": null
+    },
+    {
+      "rank": 35,
+      "memberId": 460,
+      "name": "\\/\\/illy",
+      "value": 5269,
+      "profileUrl": "https://jambands.ca/profile/460-illy/",
+      "avatar": null
+    },
+    {
+      "rank": 36,
+      "memberId": 192,
+      "name": "Im going home Donny",
+      "value": 5122,
+      "profileUrl": "https://jambands.ca/profile/192-im-going-home-donny/",
+      "avatar": null
+    },
+    {
+      "rank": 37,
+      "memberId": 64,
+      "name": "PassedOutGuy",
+      "value": 5110,
+      "profileUrl": "https://jambands.ca/profile/64-passedoutguy/",
+      "avatar": null
+    },
+    {
+      "rank": 38,
+      "memberId": 116,
+      "name": "CyberHippie",
+      "value": 5063,
+      "profileUrl": "https://jambands.ca/profile/116-cyberhippie/",
+      "avatar": null
+    },
+    {
+      "rank": 39,
+      "memberId": 2317,
+      "name": "edger",
+      "value": 4863,
+      "profileUrl": "https://jambands.ca/profile/2317-edger/",
+      "avatar": null
+    },
+    {
+      "rank": 40,
+      "memberId": 544,
+      "name": "bONES",
+      "value": 4841,
+      "profileUrl": "https://jambands.ca/profile/544-bones/",
+      "avatar": null
+    },
+    {
+      "rank": 41,
+      "memberId": 148,
+      "name": "Hux",
+      "value": 4739,
+      "profileUrl": "https://jambands.ca/profile/148-hux/",
+      "avatar": null
+    },
+    {
+      "rank": 42,
+      "memberId": 4,
+      "name": "badams",
+      "value": 4634,
+      "profileUrl": "https://jambands.ca/profile/4-badams/",
+      "avatar": null
+    },
+    {
+      "rank": 43,
+      "memberId": 97,
+      "name": "backbacon",
+      "value": 4442,
+      "profileUrl": "https://jambands.ca/profile/97-backbacon/",
+      "avatar": null
+    },
+    {
+      "rank": 44,
+      "memberId": 569,
+      "name": "Tooly",
+      "value": 4347,
+      "profileUrl": "https://jambands.ca/profile/569-tooly/",
+      "avatar": null
+    },
+    {
+      "rank": 45,
+      "memberId": 953,
+      "name": "Thorgnor",
+      "value": 4270,
+      "profileUrl": "https://jambands.ca/profile/953-thorgnor/",
+      "avatar": null
+    },
+    {
+      "rank": 46,
+      "memberId": 172,
+      "name": "Freak By Night",
+      "value": 4241,
+      "profileUrl": "https://jambands.ca/profile/172-freak-by-night/",
+      "avatar": null
+    },
+    {
+      "rank": 47,
+      "memberId": 24,
+      "name": "gentlemonkey",
+      "value": 4235,
+      "profileUrl": "https://jambands.ca/profile/24-gentlemonkey/",
+      "avatar": null
+    },
+    {
+      "rank": 48,
+      "memberId": 1862,
+      "name": "SmoothedShredder",
+      "value": 4201,
+      "profileUrl": "https://jambands.ca/profile/1862-smoothedshredder/",
+      "avatar": null
+    }
   ],
   "mostReputation": [
-    {"name":"Esau.","value":278,"avatar":null},
-    {"name":"Booche","value":236,"avatar":null},
-    {"name":"Davey Boy 2.0","value":207,"avatar":null},
-    {"name":"c-towns","value":168,"avatar":null},
-    {"name":"Velvet","value":160,"avatar":null},
-    {"name":"edger","value":118,"avatar":null},
-    {"name":"bouche","value":112,"avatar":null},
-    {"name":"bradm","value":108,"avatar":null},
-    {"name":"Hartamophone","value":101,"avatar":null},
-    {"name":"phorbesie","value":94,"avatar":null}
+    {
+      "rank": 1,
+      "memberId": 2380,
+      "name": "Esau.",
+      "value": 278,
+      "profileUrl": "https://jambands.ca/profile/2380-esau/",
+      "avatar": null
+    },
+    {
+      "rank": 2,
+      "memberId": 3,
+      "name": "Booche",
+      "value": 236,
+      "profileUrl": "https://jambands.ca/profile/3-booche/",
+      "avatar": null
+    },
+    {
+      "rank": 3,
+      "memberId": 7,
+      "name": "Davey Boy 2.0",
+      "value": 207,
+      "profileUrl": "https://jambands.ca/profile/7-davey-boy-20/",
+      "avatar": null
+    },
+    {
+      "rank": 4,
+      "memberId": 324,
+      "name": "c-towns",
+      "value": 168,
+      "profileUrl": "https://jambands.ca/profile/324-c-towns/",
+      "avatar": null
+    },
+    {
+      "rank": 5,
+      "memberId": 135,
+      "name": "Velvet",
+      "value": 160,
+      "profileUrl": "https://jambands.ca/profile/135-velvet/",
+      "avatar": null
+    },
+    {
+      "rank": 6,
+      "memberId": 2317,
+      "name": "edger",
+      "value": 118,
+      "profileUrl": "https://jambands.ca/profile/2317-edger/",
+      "avatar": null
+    },
+    {
+      "rank": 7,
+      "memberId": 1,
+      "name": "bouche",
+      "value": 112,
+      "profileUrl": "https://jambands.ca/profile/1-bouche/",
+      "avatar": null
+    },
+    {
+      "rank": 8,
+      "memberId": 80,
+      "name": "bradm",
+      "value": 108,
+      "profileUrl": "https://jambands.ca/profile/80-bradm/",
+      "avatar": null
+    },
+    {
+      "rank": 9,
+      "memberId": 1820,
+      "name": "Hartamophone",
+      "value": 101,
+      "profileUrl": "https://jambands.ca/profile/1820-hartamophone/",
+      "avatar": null
+    },
+    {
+      "rank": 10,
+      "memberId": 2050,
+      "name": "phorbesie",
+      "value": 94,
+      "profileUrl": "https://jambands.ca/profile/2050-phorbesie/",
+      "avatar": null
+    },
+    {
+      "rank": 11,
+      "memberId": 127,
+      "name": "Northern Wish",
+      "value": 64,
+      "profileUrl": "https://jambands.ca/profile/127-northern-wish/",
+      "avatar": null
+    },
+    {
+      "rank": 12,
+      "memberId": 55,
+      "name": "Jaimoe",
+      "value": 49,
+      "profileUrl": "https://jambands.ca/profile/55-jaimoe/",
+      "avatar": null
+    },
+    {
+      "rank": 13,
+      "memberId": 402,
+      "name": "Jay Funk Dawg",
+      "value": 46,
+      "profileUrl": "https://jambands.ca/profile/402-jay-funk-dawg/",
+      "avatar": null
+    },
+    {
+      "rank": 14,
+      "memberId": 544,
+      "name": "bONES",
+      "value": 41,
+      "profileUrl": "https://jambands.ca/profile/544-bones/",
+      "avatar": null
+    },
+    {
+      "rank": 15,
+      "memberId": 172,
+      "name": "Freak By Night",
+      "value": 37,
+      "profileUrl": "https://jambands.ca/profile/172-freak-by-night/",
+      "avatar": null
+    },
+    {
+      "rank": 16,
+      "memberId": 190,
+      "name": "dave-O",
+      "value": 31,
+      "profileUrl": "https://jambands.ca/profile/190-dave-o/",
+      "avatar": null
+    },
+    {
+      "rank": 17,
+      "memberId": 2445,
+      "name": "guitarberman",
+      "value": 29,
+      "profileUrl": "https://jambands.ca/profile/2445-guitarberman/",
+      "avatar": null
+    },
+    {
+      "rank": 18,
+      "memberId": 122,
+      "name": "AD",
+      "value": 29,
+      "profileUrl": "https://jambands.ca/profile/122-ad/",
+      "avatar": null
+    },
+    {
+      "rank": 19,
+      "memberId": 17,
+      "name": "DevO",
+      "value": 27,
+      "profileUrl": "https://jambands.ca/profile/17-devo/",
+      "avatar": null
+    },
+    {
+      "rank": 20,
+      "memberId": 2301,
+      "name": "boiler",
+      "value": 25,
+      "profileUrl": "https://jambands.ca/profile/2301-boiler/",
+      "avatar": null
+    },
+    {
+      "rank": 21,
+      "memberId": 37,
+      "name": "Pablo Sanchez",
+      "value": 21,
+      "profileUrl": "https://jambands.ca/profile/37-pablo-sanchez/",
+      "avatar": null
+    },
+    {
+      "rank": 22,
+      "memberId": 24,
+      "name": "gentlemonkey",
+      "value": 18,
+      "profileUrl": "https://jambands.ca/profile/24-gentlemonkey/",
+      "avatar": null
+    },
+    {
+      "rank": 23,
+      "memberId": 114,
+      "name": "hamilton",
+      "value": 18,
+      "profileUrl": "https://jambands.ca/profile/114-hamilton/",
+      "avatar": null
+    },
+    {
+      "rank": 24,
+      "memberId": 981,
+      "name": "fluffhead77",
+      "value": 17,
+      "profileUrl": "https://jambands.ca/profile/981-fluffhead77/",
+      "avatar": null
+    },
+    {
+      "rank": 25,
+      "memberId": 1041,
+      "name": "HaMike",
+      "value": 16,
+      "profileUrl": "https://jambands.ca/profile/1041-hamike/",
+      "avatar": null
+    },
+    {
+      "rank": 26,
+      "memberId": 745,
+      "name": "ollie",
+      "value": 14,
+      "profileUrl": "https://jambands.ca/profile/745-ollie/",
+      "avatar": null
+    },
+    {
+      "rank": 27,
+      "memberId": 52,
+      "name": "mark tonin",
+      "value": 14,
+      "profileUrl": "https://jambands.ca/profile/52-mark-tonin/",
+      "avatar": null
+    },
+    {
+      "rank": 28,
+      "memberId": 64,
+      "name": "PassedOutGuy",
+      "value": 13,
+      "profileUrl": "https://jambands.ca/profile/64-passedoutguy/",
+      "avatar": null
+    },
+    {
+      "rank": 29,
+      "memberId": 125,
+      "name": "Schwa.",
+      "value": 11,
+      "profileUrl": "https://jambands.ca/profile/125-schwa/",
+      "avatar": null
+    },
+    {
+      "rank": 30,
+      "memberId": 192,
+      "name": "Im going home Donny",
+      "value": 11,
+      "profileUrl": "https://jambands.ca/profile/192-im-going-home-donny/",
+      "avatar": null
+    },
+    {
+      "rank": 31,
+      "memberId": 1946,
+      "name": "deranger",
+      "value": 11,
+      "profileUrl": "https://jambands.ca/profile/1946-deranger/",
+      "avatar": null
+    },
+    {
+      "rank": 32,
+      "memberId": 2064,
+      "name": "Hal Johnson",
+      "value": 11,
+      "profileUrl": "https://jambands.ca/profile/2064-hal-johnson/",
+      "avatar": null
+    },
+    {
+      "rank": 33,
+      "memberId": 2746,
+      "name": "Marcust99",
+      "value": 10,
+      "profileUrl": "https://jambands.ca/profile/2746-marcust99/",
+      "avatar": null
+    },
+    {
+      "rank": 34,
+      "memberId": 116,
+      "name": "CyberHippie",
+      "value": 10,
+      "profileUrl": "https://jambands.ca/profile/116-cyberhippie/",
+      "avatar": null
+    },
+    {
+      "rank": 35,
+      "memberId": 94,
+      "name": "ersh",
+      "value": 8,
+      "profileUrl": "https://jambands.ca/profile/94-ersh/",
+      "avatar": null
+    },
+    {
+      "rank": 36,
+      "memberId": 831,
+      "name": "Rary8",
+      "value": 8,
+      "profileUrl": "https://jambands.ca/profile/831-rary8/",
+      "avatar": null
+    },
+    {
+      "rank": 37,
+      "memberId": 580,
+      "name": "Rob Not Bob",
+      "value": 7,
+      "profileUrl": "https://jambands.ca/profile/580-rob-not-bob/",
+      "avatar": null
+    },
+    {
+      "rank": 38,
+      "memberId": 1247,
+      "name": "RobL",
+      "value": 7,
+      "profileUrl": "https://jambands.ca/profile/1247-robl/",
+      "avatar": null
+    },
+    {
+      "rank": 39,
+      "memberId": 188,
+      "name": "Rossolee",
+      "value": 6,
+      "profileUrl": "https://jambands.ca/profile/188-rossolee/",
+      "avatar": null
+    },
+    {
+      "rank": 40,
+      "memberId": 5247,
+      "name": "jimmy skyline",
+      "value": 6,
+      "profileUrl": "https://jambands.ca/profile/5247-jimmy-skyline/",
+      "avatar": null
+    },
+    {
+      "rank": 41,
+      "memberId": 768,
+      "name": "elemeno",
+      "value": 6,
+      "profileUrl": "https://jambands.ca/profile/768-elemeno/",
+      "avatar": null
+    },
+    {
+      "rank": 42,
+      "memberId": 1231,
+      "name": "Cosmic ChrisC",
+      "value": 5,
+      "profileUrl": "https://jambands.ca/profile/1231-cosmic-chrisc/",
+      "avatar": null
+    },
+    {
+      "rank": 43,
+      "memberId": 2036,
+      "name": "phishtaper",
+      "value": 5,
+      "profileUrl": "https://jambands.ca/profile/2036-phishtaper/",
+      "avatar": null
+    },
+    {
+      "rank": 44,
+      "memberId": 4103,
+      "name": "WildBill",
+      "value": 5,
+      "profileUrl": "https://jambands.ca/profile/4103-wildbill/",
+      "avatar": null
+    },
+    {
+      "rank": 45,
+      "memberId": 804,
+      "name": "Weirdness",
+      "value": 5,
+      "profileUrl": "https://jambands.ca/profile/804-weirdness/",
+      "avatar": null
+    },
+    {
+      "rank": 46,
+      "memberId": 5146,
+      "name": "BCID",
+      "value": 4,
+      "profileUrl": "https://jambands.ca/profile/5146-bcid/",
+      "avatar": null
+    },
+    {
+      "rank": 47,
+      "memberId": 47,
+      "name": "SaggyBalls",
+      "value": 4,
+      "profileUrl": "https://jambands.ca/profile/47-saggyballs/",
+      "avatar": null
+    },
+    {
+      "rank": 48,
+      "memberId": 5162,
+      "name": "2ndtube",
+      "value": 4,
+      "profileUrl": "https://jambands.ca/profile/5162-2ndtube/",
+      "avatar": null
+    }
   ]
 }
