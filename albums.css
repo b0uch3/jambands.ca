@@ -20,8 +20,10 @@
 .album-youtube { display: inline-block; margin-top: 18px; color: #eebc69; font-size: .9rem; font-weight: 700; text-underline-offset: 4px; }
 .album-youtube:hover { color: #f8cd86; }
 .album-youtube:focus-visible { outline: 3px solid #eebc69; outline-offset: 4px; }
-.album-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; color: #a9beae; font-size: .87rem; margin-top: 20px; }
+.album-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #a9beae; font-size: .87rem; margin-top: 20px; }
 .album-meta strong { color: #e8eee5; }
+.album-poster { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.album-avatar { width: 34px; height: 34px; object-fit: cover; border-radius: 50%; flex: none; background: #315242; }
 .album-more { display: block; margin: 34px auto 0; padding: 14px 24px; border: 1px solid #eebc69; border-radius: 6px; color: #102720; background: #eebc69; font: inherit; font-weight: 800; cursor: pointer; }
 .album-more[hidden] { display: none; }
 @media (max-width: 700px) { .album-list { grid-template-columns: 1fr; } .album-page { padding: 54px 0 70px; } .album-controls label[for="album-search"] { flex-basis: 100%; } }
