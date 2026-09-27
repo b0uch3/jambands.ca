@@ -25,6 +25,16 @@ function renderCard(entry) {
     const comment = document.createElement('p'); comment.className = 'album-comment';
     comment.textContent = `“${entry.comment}”`; card.append(comment);
   }
+  const youtube = document.createElement('a');
+  youtube.className = 'album-youtube';
+  const youtubeSearch = new URL('https://www.youtube.com/results');
+  youtubeSearch.searchParams.set('search_query', `${entry.artist} ${entry.album}`);
+  youtube.href = youtubeSearch.href;
+  youtube.target = '_blank';
+  youtube.rel = 'noopener noreferrer';
+  youtube.textContent = 'Find on YouTube ↗';
+  youtube.setAttribute('aria-label', `Search YouTube for ${entry.artist} — ${entry.album} (opens in a new tab)`);
+  card.append(youtube);
   const meta = document.createElement('div'); meta.className = 'album-meta';
   const poster = document.createElement('strong'); poster.textContent = entry.poster || 'Forum member';
   const date = document.createElement('time'); date.dateTime = entry.date; date.textContent = entry.date;
