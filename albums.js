@@ -4,6 +4,7 @@ const search = document.querySelector('#album-search');
 const year = document.querySelector('#album-year');
 const more = document.querySelector('#album-more');
 let entries = [];
+let avatars = {};
 let shown = 0;
 const PAGE_SIZE = 40;
 
@@ -37,8 +38,22 @@ function renderCard(entry) {
   card.append(youtube);
   const meta = document.createElement('div'); meta.className = 'album-meta';
   const poster = document.createElement('strong'); poster.textContent = entry.poster || 'Forum member';
+  const identity = document.createElement('span'); identity.className = 'album-poster';
+  const avatar = avatars[entry.poster];
+  if (avatar) {
+    const photo = document.createElement('img');
+    photo.className = 'album-avatar';
+    photo.src = avatar;
+    photo.alt = '';
+    photo.width = 34;
+    photo.height = 34;
+    photo.loading = 'lazy';
+    photo.decoding = 'async';
+    identity.append(photo);
+  }
+  identity.append(poster);
   const date = document.createElement('time'); date.dateTime = entry.date; date.textContent = entry.date;
-  meta.append(poster, date); card.append(meta);
+  meta.append(identity, date); card.append(meta);
   return card;
 }
 function render(reset = false) {
@@ -53,9 +68,14 @@ function render(reset = false) {
 search.addEventListener('input', () => render(true));
 year.addEventListener('change', () => render(true));
 more.addEventListener('click', () => render());
-Promise.all(Array.from({length: 8}, (_, index) => fetch(`./albums-${index + 1}.json`)
-  .then(response => { if (!response.ok) throw new Error('Album archive unavailable'); return response.json(); })))
-  .then(parts => {
+Promise.all([
+  Promise.all(Array.from({length: 8}, (_, index) => fetch(`./albums-${index + 1}.json`)
+    .then(response => { if (!response.ok) throw new Error('Album archive unavailable'); return response.json(); }))),
+  fetch('./data/album-avatars.json')
+    .then(response => response.ok ? response.json() : {})
+    .catch(() => ({})),
+]).then(([parts, memberAvatars]) => {
+    avatars = memberAvatars;
     if (parts.some(part => !Array.isArray(part.albums))) throw new Error('Invalid album archive');
     entries = parts.flatMap(part => part.albums).filter(item => item.artist && item.album && item.date)
       .sort((a, b) => b.date.localeCompare(a.date));
