@@ -17,6 +17,9 @@
 .album-card h2 { margin: 6px 0 0; color: #f6f2e8; font-size: clamp(1.35rem, 2.1vw, 1.9rem); line-height: 1.12; letter-spacing: -.035em; }
 .album-artist { color: #eebc69; font-weight: 800; font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; margin: 0; }
 .album-comment { color: #d9e2d9; line-height: 1.55; margin: 19px 0 25px; white-space: pre-line; }
+.album-youtube { display: inline-block; margin-top: 18px; color: #eebc69; font-size: .9rem; font-weight: 700; text-underline-offset: 4px; }
+.album-youtube:hover { color: #f8cd86; }
+.album-youtube:focus-visible { outline: 3px solid #eebc69; outline-offset: 4px; }
 .album-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; color: #a9beae; font-size: .87rem; margin-top: 20px; }
 .album-meta strong { color: #e8eee5; }
 .album-more { display: block; margin: 34px auto 0; padding: 14px 24px; border: 1px solid #eebc69; border-radius: 6px; color: #102720; background: #eebc69; font: inherit; font-weight: 800; cursor: pointer; }
