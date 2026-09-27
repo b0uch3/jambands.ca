@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102720">
+  <meta name="description" content="A Jambands.ca memory game: tap the old forum avatars and see which Scanks you remember.">
+  <title>Who's the Scank? · Jambands.ca</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scanks.css">
+  <script src="scanks.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead"><a class="wordmark" href="./" aria-label="Jambands.ca home">jambands<span>.ca</span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="community.html">Community stats</a><a href="albums.html">Listening diary</a><a href="scanks.html" aria-current="page">Scanks</a></nav></header>
+    <main class="scanks-page">
+      <section class="scanks-intro" aria-labelledby="scanks-title">
+        <p class="eyebrow">From The Sanctuary · A community memory game</p>
+        <h1 id="scanks-title">Who's the<br><em>Scank?</em></h1>
+        <p class="scanks-lede">Remember the avatar, but can't quite place the name? Take a look around and tap a face to see who's behind it.</p>
+      </section>
+      <aside class="scanks-history" aria-labelledby="scanks-history-title">
+        <span class="scanks-history-mark" aria-hidden="true">S</span>
+        <div><h2 id="scanks-history-title">Why “Scank”?</h2><p>Before the Soundboard, the forum's gathering place was called <strong>The Sanctuary</strong>. Its members coined the nickname <strong>Scanks</strong> for themselves. These saved avatars are a small window into the people who made that place feel like a community.</p></div>
+      </aside>
+      <section class="scanks-game" aria-labelledby="scanks-game-title">
+        <div class="scanks-game-head">
+          <div><p class="scanks-kicker">The faces behind the posts</p><h2 id="scanks-game-title">How many do you remember?</h2><p id="scanks-progress" class="scanks-progress" role="status">Loading the Scanks…</p></div>
+          <div class="scanks-actions"><button id="scanks-shuffle" type="button">Shuffle &amp; hide</button><button id="scanks-reveal" type="button">Reveal all</button></div>
+        </div>
+        <ol id="scanks-grid" class="scanks-grid" aria-label="Forum member avatars"></ol>
+        <p class="scanks-note">These images come from a saved forum backup. An avatar may have changed during a member's years on the site.</p>
+      </section>
+    </main>
+    <footer><span>Jambands.ca</span><span>The Sanctuary lives on in its stories.</span></footer>
+  </div>
+</body>
+</html>
